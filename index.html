@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Bio Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            overflow: hidden;
+
+
+        }
+
+        h2 {
+            padding: 20px 0px 15px 0px;
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0px 1px 19px -1px rgba(0, 0, 0, 0.61);
+            -moz-box-shadow: 0px 1px 19px -1px rgba(0, 0, 0, 0.61);
+            box-shadow: 0px 1px 19px -1px rgba(0, 0, 0, 0.61);
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .main-header,
+        .main-footer {
+            height: 75px;
+            width: 100vw;
+            background-color: rgb(186, 150, 194);
+            text-align: center;
+        }
+
+        .main-body-container {
+            background-image: url('./img/bg3.jpg');
+            background-repeat: no-repeat;
+            object-fit: contain;
+            background-size: cover;
+
+        }
+
+        .logo-text {
+            display: block;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .main-container {
+            height: calc(100vh - 150px);
+            width: 90vw;
+            margin: 0px auto;
+
+
+        }
+
+        .top-section {
+            width: 100%;
+            background-color: rgb(219, 219, 219);
+            height: 210px;
+            margin: 10px 0px;
+            overflow: hidden;
+
+        }
+
+        .top-inner-section {
+            overflow: auto;
+        }
+
+        .bottom-section {
+            width: 100%;
+            height: 70%;
+            background-color: rgba(186, 150, 194, 0.897);
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: rgb(219, 219, 219);
+            height: 100%;
+            float: left;
+            text-align: left
+        }
+
+        .gallery {
+            height: 100%;
+            margin-left: 25%;
+            padding: 0px 1em;
+            overflow: auto;
+            object-fit: contain;
+        }
+
+        .gallery-container {
+            list-style-type: none;
+            text-align: center;
+
+
+
+        }
+
+        .gallery-container>li {
+            display: inline-block;
+            margin: 15px;
+            object-fit: contain;
+        }
+
+        .gallery-container>li>img {
+            width: 230px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .pic-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+
+
+        }
+
+        .pic-container>img {
+         object-fit: contain;
+
+            width: 190px;
+            margin: 10px;
+
+        }
+
+
+        .sidebar>ul {
+            list-style-type: none;
+            height: 100%;
+
+        }
+
+        .sidebar>ul>li>a {
+            padding: 15px 20px;
+            display: block;
+            background-color: rgb(219, 219, 219);
+            border: 1px solid #f1f1f1;
+            transition-duration: 1.0s;
+
+        }
+
+        .sidebar>ul>li a:hover {
+            background-color: rgba(186, 150, 194, 0.918);
+        }
+
+  
+
+        .footer-text {
+
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="main-body-container">
+    <header class="main-header box-shadow">
+        <span class="logo-text">
+            Alexandra Garcia Castro
+        </span>
+    </header>
+    <section class="main-container">
+        <div class="top-section box-shadow">
+            <div class="top-inner-section">
+                <div class="pic-container box-shadow">
+                    <img src="./img/me.jpg" class="bio-image" alt="my pic">
+                </div>
+                <div class="bio-description">
+                    <h2>About Me</h2>
+
+                    <p>I am currently attending my last semester at Fresno State. I am from Ontario, CA. I moved to
+                        Visalia, CA about 12 years ago and to Fresno, CA about one year ago. I am majoring in Computer
+                        Information Systems. I work at the Kennel Bookstore here on campus.</p>
+                    <p>I enjoy playing video games. Some of my favorite series are The Legend of Zelda, Animal
+                        Crossing, Super Smash Brothers, and much more. I enjoy shopping at places such as Forever 21
+                        and Tillys. I have a puppy named Peach. She is my everything!</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section box-shadow">
+            <aside class="sidebar">
+                <ul class="list">
+                    <li>
+                        <a href="https://www.forever21.com/us/shop/catalog/category/f21/women-main" target="_blank">Forever
+                            21</a>
+                    </li>
+                    <li>
+                        <a href="https://www.adidas.com/us" target="_blank">Adidas</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tillys.com/?rmatt=tsid:1012654|cid:42878781|agid:1293114231|tid:kwd-131576200|crid:226046442443|nw:g|rnd:3761098811327199891|dvc:c|adp:1t1&CAWELAID=120013610001534946&CATRK=SPFID-1&CAAGID=1293114231&CATCI=kwd-131576200&CAPCID=226046442443&CADevice=c&gclid=EAIaIQobChMI5OXlvvyW4AIVgblkCh1NZwfNEAAYASAAEgKs8fD_BwE"
+                            target="_blank">Tillys</a>
+                    </li>
+                    <li>
+                        <a href="https://blackboard.learn.fresnostate.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1"
+                            target="_blank">Fresno State Blackboard</a>
+                    </li>
+                    <li>
+                        <a href="https://www.elfcosmetics.com" target="_blank">Elf Cosmetics</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="gallery">
+                <h2>My Family</h2>
+                <ul class="gallery-container">
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/peach1.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/peach2.jpg" alt="item2">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/peach3.jpg" alt="item3">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/peach4.jpg" alt="item4">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/mom.jpg" alt="item5">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/peachme.jpg" alt="item6">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/boyfriendpeach.jpg" alt="item7">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/boyfriend.jpg" alt="item8">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <span class="footer-text">Copyright (C) 2019. Created by Alexandra Garcia Castro</span>
+    </footer>
+</body>
+
+</html>
